@@ -43,16 +43,16 @@
     <None Include="4.2.texture.vs">
       <Filter>Source Files</Filter>
     </None>
-    <None Include="1.colors.fs">
-      <Filter>Source Files</Filter>
-    </None>
     <None Include="1.lamp.fs">
       <Filter>Source Files</Filter>
     </None>
     <None Include="1.lamp.vs">
       <Filter>Source Files</Filter>
     </None>
-    <None Include="1.colors.vs">
+    <None Include="2.1.basic_lighting.vs">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="2.1.basic_lighting.fs">
       <Filter>Source Files</Filter>
     </None>
   </ItemGroup>
