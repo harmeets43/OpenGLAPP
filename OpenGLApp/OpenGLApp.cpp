@@ -7,9 +7,8 @@
 #include <glm/gtc/type_ptr.hpp>
 
 #include "shader_s.h"
-#include "camera.h"
-
 #include <iostream>
+#include "camera.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void mouse_callback(GLFWwindow* window, double xpos, double ypos);
