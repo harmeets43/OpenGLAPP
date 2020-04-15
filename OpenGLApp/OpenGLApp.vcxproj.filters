@@ -43,6 +43,18 @@
     <None Include="4.2.texture.vs">
       <Filter>Source Files</Filter>
     </None>
+    <None Include="1.colors.fs">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="1.lamp.fs">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="1.lamp.vs">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="1.colors.vs">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="container.jpg">

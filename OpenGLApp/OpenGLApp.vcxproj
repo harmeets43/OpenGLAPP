@@ -160,6 +160,10 @@
     <ClInclude Include="shader_s.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="1.colors.vs" />
+    <None Include="1.colors.fs" />
+    <None Include="1.lamp.fs" />
+    <None Include="1.lamp.vs" />
     <None Include="4.2.texture.fs" />
     <None Include="4.2.texture.vs" />
   </ItemGroup>
