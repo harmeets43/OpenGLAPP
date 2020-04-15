@@ -156,11 +156,13 @@ int main()
     // load textures (we now use a utility function to keep the code more organized)
     // -----------------------------------------------------------------------------
     unsigned int diffuseMap = loadTexture("container2.png");
+    unsigned int specularMap = loadTexture("container2_specular.png");
 
     // shader configuration
     // --------------------
     lightingShader.use();
     lightingShader.setInt("material.diffuse", 0);
+    lightingShader.setInt("material.specular", 1);
 
 
     // render loop
@@ -193,7 +195,6 @@ int main()
         lightingShader.setVec3("light.specular", 1.0f, 1.0f, 1.0f);
 
         // material properties
-        lightingShader.setVec3("material.specular", 0.5f, 0.5f, 0.5f);
         lightingShader.setFloat("material.shininess", 64.0f);
 
         // view/projection transformations
@@ -209,6 +210,9 @@ int main()
         // bind diffuse map
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_2D, diffuseMap);
+        // bind specular map
+        glActiveTexture(GL_TEXTURE1);
+        glBindTexture(GL_TEXTURE_2D, specularMap);
 
         // render the cube
         glBindVertexArray(cubeVAO);
@@ -271,7 +275,6 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
     // height will be significantly larger than specified on retina displays.
     glViewport(0, 0, width, height);
 }
-
 
 // glfw: whenever the mouse moves, this callback is called
 // -------------------------------------------------------
